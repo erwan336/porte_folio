@@ -1,199 +1,137 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
   <title>Portfolio – Erwan N'Guessan</title>
   <style>
     body {
-      background: linear-gradient(to right, #e6f0ff, #f9fbff);
-      animation: backgroundMove 20s infinite alternate;
-    }
-
-    @keyframes backgroundMove {
-      0% { background-position: left; }
-      100% { background-position: right; }
-    }
-
-    header {
-      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-    }
-
-    .gallery-item:hover img {
-      transform: scale(1.05);
-      transition: transform 0.4s ease-in-out;
-    }
-
-    .gallery-item:hover {
-      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
-    }
-
-    .gallery-item img {
-      transition: transform 0.3s ease-in-out;
-    
-    * {
-      box-sizing: border-box;
-    }
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
       margin: 0;
-      padding: 0;
-      background: #eef2f5;
+      padding: 20px;
       color: #333;
     }
     header {
-      background: linear-gradient(90deg, #003366, #005580);
-      color: white;
-      padding: 60px 20px;
       text-align: center;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      background-color: #003366;
+      color: white;
+      padding: 30px 10px;
     }
     header h1 {
+      font-size: 36px;
       margin: 0;
-      font-size: 2.5em;
     }
     header p {
-      margin: 5px 0;
-      font-size: 1.1em;
+      margin: 10px 0 5px;
+      font-size: 18px;
     }
-    nav {
-      background: #014272;
-      color: white;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 25px;
-      padding: 12px;
+    .buttons {
+      text-align: center;
+      margin: 25px 0;
     }
-    nav a {
+    .buttons a {
+      display: inline-block;
+      background-color: #0055a5;
       color: white;
+      padding: 12px 20px;
+      margin: 10px;
       text-decoration: none;
+      border-radius: 6px;
       font-weight: bold;
-      transition: 0.3s;
-    }
-    nav a:hover {
-      text-decoration: underline;
-      color: #ffd700;
-    }
-    section {
-      padding: 40px 20px;
-      max-width: 1200px;
-      margin: auto;
-      background: white;
-      margin-top: 30px;
-      border-radius: 10px;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-    }
-    h2 {
-      border-left: 5px solid #005580;
-      padding-left: 10px;
-      color: #005580;
-    }
-    ul {
-      list-style-type: square;
-      padding-left: 20px;
     }
     .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 25px;
       margin-top: 30px;
     }
-    .gallery-item {
-      border: 1px solid #ddd;
-      padding: 10px;
-      background: #f9f9f9;
-      border-radius: 8px;
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-    .gallery-item:hover {
-      transform: scale(1.02);
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    }
-    .gallery-item img {
-      max-width: 100%;
+    .gallery img {
+      max-width: 320px;
       height: auto;
-      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    .gallery-item {
+      text-align: center;
+      max-width: 320px;
     }
     .gallery-item p {
-      margin-top: 10px;
+      margin-top: 8px;
       font-weight: bold;
-      font-size: 0.95em;
-    }
-    footer {
-      background: #003366;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Erwan N'Guessan</h1>
-    <p>Géomaticien – Master de Géographie à Aix-Marseille</p>
-    <p>📞 07 51 15 92 92 | ✉️ <a href="mailto:ericn4712@gmail.com" style="color: #ffd">ericn4712@gmail.com</a></p>
-  
-    <div style="margin-top: 15px;">
-      <a href="cv_ewan_nguessan.pdf" download style="background: #ffd700; color: #003366; padding: 10px 20px; margin: 5px; border-radius: 5px; font-weight: bold; text-decoration: none;">📄 Télécharger le CV</a>
-      <a href="attestation_travail_ewan.png" download style="background: #ffd700; color: #003366; padding: 10px 20px; margin: 5px; border-radius: 5px; font-weight: bold; text-decoration: none;">📎 Voir l'attestation</a>
-    </div>
 
-    <div style="text-align: center; margin-top: 15px;">
-      <a href="cv_ewan_nguessan.pdf" download style="background: #ffcc00; color: #003366; padding: 12px 25px; margin: 10px; border-radius: 6px; font-weight: bold; text-decoration: none;">📄 Télécharger le CV</a>
-      <a href="attestation_travail_ewan.png" download style="background: #ffcc00; color: #003366; padding: 12px 25px; margin: 10px; border-radius: 6px; font-weight: bold; text-decoration: none;">📎 Voir l'attestation</a>
-    </div>
+<header>
+  <h1>Erwan N'Guessan</h1>
+  <p>📞 07 51 15 92 92 | ✉️ ericn4712@gmail.com</p>
+
+  <p>Étudiant en géographie – passionné par les SIG, la télédétection et la cartographie</p>
 </header>
 
-  <nav>
-    <a href="#presentation">Présentation</a>
-    <a href="#competences">Compétences</a>
-    <a href="#projets">Projets</a>
-    <a href="#cartes">Cartes</a>
-  </nav>
+<section style="max-width: 900px; margin: 30px auto; font-size: 16px; line-height: 1.6;">
+  <h2>Projets réalisés</h2>
+  <ul>
+    <li>🟢 Modélisation prospective des forêts classées de Côte d'Ivoire (Koba et Séguéla – 1995 à 2035)</li>
+    <li>🟢 Cartographie des îlots de chaleur urbains à Aubagne avec Sentinel-2</li>
+    <li>🟢 Analyse NDVI/NDBI/Température sur la péninsule de Yamal (Sibérie)</li>
+    <li>🟢 Classification supervisée de l’occupation du sol avec Google Earth Engine et QGIS</li>
+    <li>🟢 Création de tableaux de bord et publication web de résultats cartographiques</li>
+  </ul>
 
-  <section id="presentation">
-    <h2>Présentation</h2>
-    <p>Étudiant en Master de Géographie à Aix-Marseille Université, je conçois la cartographie comme un langage visuel essentiel pour analyser et partager les dynamiques territoriales. Mon parcours mêle SIG, télédétection, analyse spatiale et engagement humanitaire.</p>
-  </section>
+  <h2>Compétences</h2>
+  <ul>
+    <li>🌍 SIG : QGIS, ArcGIS, Google Earth Engine</li>
+    <li>📊 Traitement d’images satellites : Landsat, Sentinel-2</li>
+    <li>🧠 Modélisation : CA-Markov, Random Forest</li>
+    <li>💻 Langages : Python, HTML/CSS, Google Colab</li>
+    <li>🖼️ Visualisation : Dashboards, cartes web, GitHub Pages</li>
+  </ul>
+</section>
 
-  <section id="competences">
-    <h2>Compétences</h2>
-    <ul>
-      <li>Logiciels SIG : QGIS, ArcGIS, Google Earth Engine</li>
-      <li>Langages : Python (geopandas, rasterio), HTML/CSS</li>
-      <li>Indices : NDVI, SAVI, NDWI, NDBI</li>
-      <li>Modélisation : CA-Markov, TerrSet</li>
-      <li>Communication interculturelle et vulgarisation scientifique</li>
-    </ul>
-  </section>
 
-  <section id="projets">
-    <h2>Projets</h2>
-    <ul>
-      <li><strong>Étude de la dynamique forestière à Séguéla (Côte d’Ivoire)</strong> : classification satellitaire, projection 2035.</li>
-      <li><strong>École d’été à Sousse (Tunisie)</strong> : exploration des centuriations romaines, levés terrain et SIG.</li>
-      <li><strong>Bénévolat Croix-Rouge</strong> : accueil et accompagnement de publics en situation de vulnérabilité.</li>
-    </ul>
-  </section>
+<div class="buttons">
+  <a href="cv_ewan_nguessan.pdf" download>📄 Télécharger le CV</a>
+  <a href="attestation_travail_ewan.png" download>📎 Voir l'attestation</a>
+</div>
 
-  <section id="cartes">
-    <h2>Cartes réalisées</h2>
-    <div class="gallery">
-      <div class="gallery-item"><img src="carte_de_localisation_yamal.png" alt="Localisation Yamal"><p>Localisation – Yamal</p></div>
-      <div class="gallery-item"><img src="carte_de_relation_NDVI_TPS_NDBI.png" alt="NDVI-TPS-NDBI"><p>Relation NDVI / Température / NDBI</p></div>
-      <div class="gallery-item"><img src="centre_ville_aubagne_ilot_de_chaleur.png" alt="Ilot chaleur Aubagne"><p>Centre-ville – îlot de chaleur</p></div>
-      <div class="gallery-item"><img src="exemple_de_lieu_chaud_ilot.png" alt="Lieu chaud"><p>Exemple de lieu chaud</p></div>
-      <div class="gallery-item"><img src="ndvi_aubagne.png" alt="NDVI Aubagne"><p>NDVI – Aubagne</p></div>
-      <div class="gallery-item"><img src="projection_foret_2035.png" alt="Projection forêt 2035"><p>Projection forêt – 2035</p></div>
-      <div class="gallery-item"><img src="surface_temperature.png" alt="Température surface"><p>Température de surface</p></div>
-      <div class="gallery-item"><img src="zones_fortement_urbanise.png" alt="Zones urbanisées"><p>Zones fortement urbanisées</p></div>
-    </div>
-  </section>
+<h2 style="text-align:center;">Cartes réalisées</h2>
+<div class="gallery">
+  <div class="gallery-item">
+    <img src="carte_de_localisation_yamal.png" alt="Carte Yamal">
+    <p>Localisation – Yamal</p>
+  </div>
+  <div class="gallery-item">
+    <img src="carte_de_relation_NDVI_TPS_NDBI.png" alt="NDVI NDBI">
+    <p>Relation NDVI / NDBI</p>
+  </div>
+  <div class="gallery-item">
+    <img src="centre_ville_aubagne_ilot_de_chaleur.png" alt="Îlot de chaleur">
+    <p>Centre-ville – îlot de chaleur</p>
+  </div>
+  <div class="gallery-item">
+    <img src="exemple_de_lieu_chaud_ilot.png" alt="Lieu chaud">
+    <p>Exemple de lieu chaud</p>
+  </div>
+  <div class="gallery-item">
+    <img src="ndvi_aubagne.png" alt="NDVI Aubagne">
+    <p>NDVI – Aubagne</p>
+  </div>
+  <div class="gallery-item">
+    <img src="projection_foret_2035.png" alt="Projection forêt">
+    <p>Projection forêt – 2035</p>
+  </div>
+  <div class="gallery-item">
+    <img src="surface_temperature.png" alt="Température surface">
+    <p>Température de surface</p>
+  </div>
+  <div class="gallery-item">
+    <img src="zones_fortement_urbanise.png" alt="Zones urbanisées">
+    <p>Zones fortement urbanisées</p>
+  </div>
+</div>
 
-  <footer>
-    <p>© 2025 Erwan N'Guessan – Portfolio cartographique</p>
-  </footer>
 </body>
 </html>
