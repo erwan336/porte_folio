@@ -5,69 +5,100 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio – Ewan N'Guessan</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
-      background: #f9f9f9;
+      background: #eef2f5;
       color: #333;
     }
     header {
-      background: #1e2a38;
+      background: linear-gradient(90deg, #003366, #005580);
       color: white;
-      padding: 40px 20px;
+      padding: 60px 20px;
       text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    header p {
+      margin: 5px 0;
+      font-size: 1.1em;
     }
     nav {
-      background: #293949;
+      background: #014272;
       color: white;
       display: flex;
       justify-content: center;
-      gap: 20px;
-      padding: 10px;
+      flex-wrap: wrap;
+      gap: 25px;
+      padding: 12px;
     }
     nav a {
       color: white;
       text-decoration: none;
       font-weight: bold;
+      transition: 0.3s;
     }
     nav a:hover {
       text-decoration: underline;
+      color: #ffd700;
     }
     section {
-      padding: 30px;
-      max-width: 1000px;
+      padding: 40px 20px;
+      max-width: 1200px;
       margin: auto;
       background: white;
-      margin-top: 20px;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      margin-top: 30px;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
     }
-    h1, h2 {
-      color: #1e2a38;
+    h2 {
+      border-left: 5px solid #005580;
+      padding-left: 10px;
+      color: #005580;
+    }
+    ul {
+      list-style-type: square;
+      padding-left: 20px;
     }
     .gallery {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 20px;
+      margin-top: 30px;
     }
     .gallery-item {
-      border: 1px solid #ccc;
+      border: 1px solid #ddd;
       padding: 10px;
-      background: #fafafa;
-      border-radius: 4px;
-      text-align: center;
+      background: #f9f9f9;
+      border-radius: 8px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .gallery-item:hover {
+      transform: scale(1.02);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     }
     .gallery-item img {
       max-width: 100%;
       height: auto;
-      border-radius: 4px;
+      border-radius: 6px;
+    }
+    .gallery-item p {
+      margin-top: 10px;
+      font-weight: bold;
+      font-size: 0.95em;
     }
     footer {
-      background: #1e2a38;
+      background: #003366;
       color: white;
       text-align: center;
-      padding: 15px;
+      padding: 20px;
       margin-top: 40px;
     }
   </style>
@@ -75,7 +106,7 @@
 <body>
   <header>
     <h1>Ewan N'Guessan</h1>
-    <p>Géomaticien passionné de cartographie – Master de Géographie</p>
+    <p>Géomaticien – Master de Géographie à Aix-Marseille</p>
     <p>📞 07 51 15 92 92 | ✉️ <a href="mailto:ericn4712@gmail.com" style="color: #ffd">ericn4712@gmail.com</a></p>
   </header>
 
@@ -114,13 +145,13 @@
   <section id="cartes">
     <h2>Cartes réalisées</h2>
     <div class="gallery">
-      <div class="gallery-item"><img src="carte_de_localisation_yamal.png" alt="Localisation Yamal"><p>Carte de localisation – Yamal</p></div>
-      <div class="gallery-item"><img src="carte_de_relation_NDVI_TPS_NDBI.png" alt="Relation NDVI TPS NDBI"><p>Relation entre NDVI, Température, Urbanisation</p></div>
-      <div class="gallery-item"><img src="centre_ville_aubagne_ilot_de_chaleur.png" alt="Ilot de chaleur Aubagne"><p>Centre-ville Aubagne – îlot de chaleur</p></div>
-      <div class="gallery-item"><img src="exemple_de_lieu_chaud_ilot.png" alt="Lieu chaud"><p>Exemple d’îlot de chaleur urbain</p></div>
-      <div class="gallery-item"><img src="ndvi_aubagne.png" alt="NDVI Aubagne"><p>Indice NDVI à Aubagne</p></div>
-      <div class="gallery-item"><img src="projection_foret_2035.png" alt="Projection 2035"><p>Projection forestière à l’horizon 2035</p></div>
-      <div class="gallery-item"><img src="surface_temperature.png" alt="Température de surface"><p>Température de surface</p></div>
+      <div class="gallery-item"><img src="carte_de_localisation_yamal.png" alt="Localisation Yamal"><p>Localisation – Yamal</p></div>
+      <div class="gallery-item"><img src="carte_de_relation_NDVI_TPS_NDBI.png" alt="NDVI-TPS-NDBI"><p>Relation NDVI / Température / NDBI</p></div>
+      <div class="gallery-item"><img src="centre_ville_aubagne_ilot_de_chaleur.png" alt="Ilot chaleur Aubagne"><p>Centre-ville – îlot de chaleur</p></div>
+      <div class="gallery-item"><img src="exemple_de_lieu_chaud_ilot.png" alt="Lieu chaud"><p>Exemple de lieu chaud</p></div>
+      <div class="gallery-item"><img src="ndvi_aubagne.png" alt="NDVI Aubagne"><p>NDVI – Aubagne</p></div>
+      <div class="gallery-item"><img src="projection_foret_2035.png" alt="Projection forêt 2035"><p>Projection forêt – 2035</p></div>
+      <div class="gallery-item"><img src="surface_temperature.png" alt="Température surface"><p>Température de surface</p></div>
       <div class="gallery-item"><img src="zones_fortement_urbanise.png" alt="Zones urbanisées"><p>Zones fortement urbanisées</p></div>
     </div>
   </section>
