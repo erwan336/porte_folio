@@ -3,8 +3,35 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio – Ewan N'Guessan</title>
+  <title>Portfolio – Erwan N'Guessan</title>
   <style>
+    body {
+      background: linear-gradient(to right, #e6f0ff, #f9fbff);
+      animation: backgroundMove 20s infinite alternate;
+    }
+
+    @keyframes backgroundMove {
+      0% { background-position: left; }
+      100% { background-position: right; }
+    }
+
+    header {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    }
+
+    .gallery-item:hover img {
+      transform: scale(1.05);
+      transition: transform 0.4s ease-in-out;
+    }
+
+    .gallery-item:hover {
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+    }
+
+    .gallery-item img {
+      transition: transform 0.3s ease-in-out;
+    }
+
     * {
       box-sizing: border-box;
     }
@@ -105,7 +132,7 @@
 </head>
 <body>
   <header>
-    <h1>Ewan N'Guessan</h1>
+    <h1>Erwan N'Guessan</h1>
     <p>Géomaticien – Master de Géographie à Aix-Marseille</p>
     <p>📞 07 51 15 92 92 | ✉️ <a href="mailto:ericn4712@gmail.com" style="color: #ffd">ericn4712@gmail.com</a></p>
   
@@ -162,7 +189,7 @@
   </section>
 
   <footer>
-    <p>© 2025 Ewan N'Guessan – Portfolio cartographique</p>
+    <p>© 2025 Erwan N'Guessan – Portfolio cartographique</p>
   </footer>
 </body>
 </html>
