@@ -25,6 +25,8 @@
     }
 
     .gallery-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.25);
       box-shadow: 0 6px 15px rgba(0,0,0,0.2);
     }
 
@@ -100,6 +102,12 @@
       margin-top: 30px;
     }
     .gallery-item {
+      background: #ffffff;
+      border-radius: 10px;
+      overflow: hidden;
+      border: none;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease-in-out;
       border: 1px solid #ddd;
       padding: 10px;
       background: #f9f9f9;
@@ -107,6 +115,8 @@
       transition: transform 0.3s, box-shadow 0.3s;
     }
     .gallery-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.25);
       transform: scale(1.02);
       box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     }
@@ -130,7 +140,7 @@
   </style>
 </head>
 <body>
-  <header>
+  <header style="background: linear-gradient(to right, #001f3f, #0074D9); background-image: url('https://www.transparenttextures.com/patterns/asfalt-dark.png'); background-blend-mode: overlay;">
     <h1>Erwan N'Guessan</h1>
     <p>Géomaticien – Master de Géographie à Aix-Marseille</p>
     <p>📞 07 51 15 92 92 | ✉️ <a href="mailto:ericn4712@gmail.com" style="color: #ffd">ericn4712@gmail.com</a></p>
